@@ -17,8 +17,17 @@ public class Book {
     private Integer publicationYear;
     
     // Constructor
+      public Book() {
+		
+	}
     
-    // Getters and setters
+    @Override
+	public String toString() {
+		return "Book [id=" + id + ", title=" + title + ", authorId=" + authorId + ", isbn=" + isbn
+				+ ", publicationYear=" + publicationYear + "]";
+	}
+
+	// Getters and setters
     public Long getId() {
         return id;
     }
